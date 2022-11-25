@@ -1,0 +1,22 @@
+# SSL을 사용할 포트 지정
+server:
+#  port: 8443
+  #  SSL 설정 관련
+  ssl:
+    enabled: true
+    key-store: classpath:ssl-key.p12
+    key-store-type: PKCS12
+    key-store-password: 123456
+    key-alias: tomcat_key
+
+#  SSL 설정 관련
+logging:
+  level:
+    org:
+      springframework:
+        web: info
+      apache: info
+
+
+
+
